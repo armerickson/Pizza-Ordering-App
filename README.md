@@ -43,7 +43,7 @@ Utilizes a Node/Express server to proxy requests to the api and avoid CORS issue
    ```js
    node server.js
    ```
-4. run React app
+4. run React app in root folder
     ```js
     npm start
     ```
