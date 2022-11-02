@@ -58,6 +58,7 @@ Utilizes a Node/Express server to proxy requests to the api and avoid CORS issue
 - Move PizzaOptions.json onto the server
 - Refactor redundant code (such as in fetch calls to server)
 - move certain states to useEffect to avoid prop drilling
+- Make it single-page
 - Further visual enhancements
 - Remove hardcoded data such as number of tables
 - more!
