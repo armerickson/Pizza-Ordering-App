@@ -1,0 +1,20 @@
+{
+  "Crust": [
+    "Original",
+    "Pan",
+    "Thin Crust",
+    "Gluten Free"
+  ],
+  "Flavor": [
+    "Cheese",
+    "Pepperoni",
+    "Veggie",
+    "Meat Lover's",
+    "Deluxe"
+  ],
+  "Size": [
+    "S",
+    "M",
+    "L"
+  ]
+}

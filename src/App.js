@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from "react"
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './App.css';
+import Home from './screens/Home';
+import Login from './screens/Login';
+import PageNotFound from './screens/PageNotFound';
 
 function App() {
+  const [token, setToken] = useState("")
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <div className="container-fluid m-0 p-0">
+          <Routes>
+            <Route path="/" element={<Login setToken={setToken} />} />
+            <Route
+              path="/home"
+              element={<Home setToken={setToken} token={token} />}
+            />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
