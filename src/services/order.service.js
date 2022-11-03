@@ -1,7 +1,9 @@
 //handles ordering tasks to and from the api
+import {serviceEndpoint} from "./config.service";
+
 function OrderService() {
   //will proxy through express server hosted on 5000
-  const serverEndpoint = "http://localhost:5000";
+  const serverEndpoint = serviceEndpoint;
 
   //place order: requires order object and access_token
   const placeOrder = async (order, token) => {

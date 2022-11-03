@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const cors = require('cors');
 const fetch = require('node-fetch');
-const PORT = 5000;
-const HOST = "localhost";
+const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || "localhost";
 
 app.use(express.json())
 
