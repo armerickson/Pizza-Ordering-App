@@ -1,8 +1,10 @@
 //calls to the server to login
+import {serviceEndpoint} from "./config.service";
+
 function AuthService() {
 
   const login = async (username, password) => {
-    const endpoint = "http://localhost:5000/auth";
+    const endpoint = serviceEndpoint + "/auth";
     const fetchOptions = {
       method: "POST",
       body: JSON.stringify({

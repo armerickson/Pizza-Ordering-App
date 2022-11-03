@@ -1,0 +1,1 @@
+export const serviceEndpoint = (process.env.REACT_APP_SERVICE_ENDPOINT ?? "http://localhost:5000");
